@@ -19,6 +19,10 @@ RUN pip install --upgrade pip
 # Install Python dependencies
 RUN pip install -r requirements.txt
 
+# Download and link the spaCy model
+RUN python -m spacy download en_core_web_md && \
+    python -m spacy link en_core_web_md en
+
 # Expose the port Rasa will run on
 EXPOSE 5005
 
