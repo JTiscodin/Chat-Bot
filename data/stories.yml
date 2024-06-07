@@ -1,0 +1,40 @@
+
+version: "2.0"
+stories:
+- story: greet and ask email
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_email
+
+- story: provide info after email
+  steps:
+  - intent: capture_email
+  - action: action_capture_email
+  - intent: ask_info
+  - action: action_provide_info
+
+- story: provide pricing info
+  steps:
+  - intent: ask_pricing
+  - action: utter_pricing
+
+- story: provide location info
+  steps:
+  - intent: ask_location
+  - action: utter_location
+
+- story: fallback scenario
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+
+- story: provide personalized info
+  steps:
+  - intent: ask_personalized_info
+  - action: action_provide_personalized_info
+
+- story: fetch content
+  steps:
+  - intent: fetch_content
+  - action: action_fetch_website_content

@@ -1,0 +1,59 @@
+
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Hi there
+    - Good morning
+    - Good evening
+
+- intent: capture_email
+  examples: |
+    - My email is [john.doe@example.com](email)
+    - You can reach me at [jane.doe@example.com](email)
+    - Email me at [contact@example.com](email)
+    - Here is my email: [info@example.com](email)
+    - I can be contacted at [example@mail.com](email)
+
+- intent: ask_info
+  examples: |
+    - Can you tell me about your services?
+    - I need information about your product.
+    - What services do you offer?
+    - What are your working hours?
+    - How can I contact support?
+    - Tell me about your company
+    - What kind of services do you provide?
+
+- intent: ask_pricing
+  examples: |
+    - How much does your product cost?
+    - What is the price of your service?
+    - Can you provide pricing details?
+    - What are your rates?
+    - How much do you charge?
+    - What is the cost?
+
+- intent: ask_location
+  examples: |
+    - Where are you located?
+    - What is your address?
+    - Where can I find your office?
+    - What is your location?
+    - Can you tell me your address?
+    - Where is your company located?
+
+- intent: ask_personalized_info
+  examples: |
+    - Can you provide personalized information?
+    - What do you know about my previous interactions?
+    - Tell me something specific to me.
+
+- intent: fetch_content
+  examples: |
+    - Can you find information about [AI](topic)?
+    - I need details on [web development](topic).
+    - Search for [mobile app development](topic).
