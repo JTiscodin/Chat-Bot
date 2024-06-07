@@ -1,6 +1,7 @@
 language: en
 pipeline:
 - name: SpacyNLP
+  model: "en_core_web_md"
 - name: SpacyTokenizer
 - name: SpacyFeaturizer
 - name: RegexFeaturizer
@@ -28,4 +29,3 @@ policies:
   core_fallback_action_name: "action_default_fallback"
   core_fallback_threshold: 0.3
   enable_fallback_prediction: true
-assistant_id: 20240607-180557-bold-stream
